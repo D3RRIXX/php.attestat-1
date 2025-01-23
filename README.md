@@ -38,3 +38,10 @@ CREATE TABLE test_results (
 
 - Логин: admin
 - Пароль: admin123
+
+## Изображения
+![Страница логина](img/login.png)
+
+![Страница тестов](img/test.png)
+
+![Страница просмотра результатов](img/results.png)
