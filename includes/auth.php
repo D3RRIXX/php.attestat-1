@@ -22,7 +22,6 @@ function authenticateAdmin($username, $password) {
  * @param string $username Имя пользователя
  */
 function loginAdmin($username) {
-    session_start();
     $_SESSION['admin_logged_in'] = true;
     $_SESSION['admin_username'] = $username;
 }
