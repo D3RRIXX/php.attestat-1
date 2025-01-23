@@ -1,6 +1,10 @@
 <?php
 // includes/auth.php
 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 /**
  * Проверка учетных данных администратора
  *
@@ -35,7 +39,6 @@ function loginAdmin($username)
  */
 function isAdminLoggedIn()
 {
-    session_start();
     return isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true;
 }
 
