@@ -8,7 +8,8 @@
  * @param string $password Пароль
  * @return bool
  */
-function authenticateAdmin($username, $password) {
+function authenticateAdmin($username, $password)
+{
     // Жестко заданныеCredentional для простоты
     $validUsername = 'admin';
     $validPassword = 'admin123';
@@ -21,7 +22,8 @@ function authenticateAdmin($username, $password) {
  *
  * @param string $username Имя пользователя
  */
-function loginAdmin($username) {
+function loginAdmin($username)
+{
     $_SESSION['admin_logged_in'] = true;
     $_SESSION['admin_username'] = $username;
 }
@@ -31,7 +33,8 @@ function loginAdmin($username) {
  *
  * @return bool
  */
-function isAdminLoggedIn() {
+function isAdminLoggedIn()
+{
     session_start();
     return isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true;
 }
@@ -39,7 +42,8 @@ function isAdminLoggedIn() {
 /**
  * Выход администратора
  */
-function logoutAdmin() {
+function logoutAdmin()
+{
     session_start();
     unset($_SESSION['admin_logged_in']);
     unset($_SESSION['admin_username']);

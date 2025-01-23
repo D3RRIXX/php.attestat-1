@@ -23,11 +23,13 @@ $testResults = getAllTestResults($pdo);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Панель администратора</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Результаты тестирования</h1>
@@ -54,6 +56,7 @@ $testResults = getAllTestResults($pdo);
         </table>
     </div>
 </body>
+
 </html>
 
 <?php

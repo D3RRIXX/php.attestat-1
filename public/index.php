@@ -3,11 +3,13 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Тестирование</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Онлайн-тестирование</h1>
@@ -23,4 +25,5 @@ session_start();
         </div>
     </div>
 </body>
+
 </html>

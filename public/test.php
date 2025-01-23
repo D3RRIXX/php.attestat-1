@@ -20,11 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Прохождение теста</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Тестирование</h1>
@@ -32,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php foreach ($questions as $index => $question): ?>
                 <div class="question">
                     <h3><?= htmlspecialchars($question['text']) ?></h3>
-                    
+
                     <?php if ($index === 0): ?>
                         <input type="text" name="answers[<?= $index ?>][]" placeholder="Введите ваше имя" required>
                     <?php else: ?>
@@ -56,4 +58,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </div>
 </body>
+
 </html>

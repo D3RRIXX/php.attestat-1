@@ -11,11 +11,13 @@ $username = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Результаты теста</title>
     <link rel="stylesheet" href="../static/styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Результаты теста</h1>
@@ -27,4 +29,5 @@ $username = $_SESSION['username'];
         <a href="index.php" class="button">На главную</a>
     </div>
 </body>
+
 </html>
